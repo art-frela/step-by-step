@@ -1,9 +1,16 @@
-package: github.com/k8s-community/step-by-step
+package: github.com/art-frela/step-by-step
 import:
 - package: github.com/Sirupsen/logrus
-  version: v0.11.5
-- package: github.com/takama/router
-  version: 0.6.3
+  version: ~1.0.3
 - package: github.com/k8s-community/handlers
-  version: 0.0.1
-- package: github.com/k8s-community/utils/shutdown
+  version: ~0.1.1
+- package: github.com/k8s-community/step-by-step
+  version: ~0.0.12
+  subpackages:
+  - version
+- package: github.com/k8s-community/utils
+  version: ~0.0.2
+  subpackages:
+  - shutdown
+- package: github.com/takama/router
+  version: ~0.6.5
